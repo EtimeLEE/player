@@ -9,7 +9,9 @@
 <div class="mediaplayer" id="mediaplayer">
     <h1>HTML5 视频播放器</h1>
     <div class="video">
-        <video id="player" src="http://vf2.mtime.cn/Video/2017/02/16/mp4/170216103715670994.mp4">
+        <!--<video id="player" src="http://vf2.mtime.cn/Video/2017/02/16/mp4/170216103715670994.mp4">-->
+        <video id="player" src="http://vfx.mtime.cn/Video/2017/03/12/mp4/170312123918248432.mp4">
+
             Video player not available.
         </video>
     </div>
@@ -62,6 +64,7 @@ window.onload = function(){
 
     // 视频可以播放时
     player.oncanplay = function(){
+        console.log(1);
         total.innerHTML = formatSeconds(this.duration);
     };
     player.onclick = playCtrl;
