@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="mediaplayer" id="mediaplayer">
-    <h1>HTML5 视频播放器</h1>
+    <h1>叮当狼3 殊死一战</h1>
     <div class="video">
 
         <video id="player">
@@ -62,7 +62,6 @@ window.onload = function(){
 
     // 视频可以播放时
     player.oncanplay = function(){
-        console.log(1);
         total.innerHTML = formatSeconds(this.duration);
     };
 
@@ -128,7 +127,6 @@ window.onload = function(){
 
     // 音量变化
     player.onvolumechange = function(){
-//        currVol = this.volume;
         volBar.style.width = this.volume * 100 + "%";
         if(this.volume == 0){
             volBtn.classList.remove("icon-volume-medium");
@@ -174,6 +172,7 @@ window.onload = function(){
 
     // 视频播放控制
     function playCtrl(){
+        total.innerHTML = formatSeconds(this.duration);
         if (player.paused){
             player.play();
             playBtn.classList.remove("icon-play3");
