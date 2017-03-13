@@ -63,10 +63,16 @@ window.onload = function(){
 
 
     // 视频可以播放时
-    player.oncanplay = function(){
-        console.log(1);
-        total.innerHTML = formatSeconds(this.duration);
-    };
+//    player.oncanplay = function(){
+//        console.log(1);
+//        total.innerHTML = formatSeconds(this.duration);
+//    };
+
+    player.addEventListener("canplay", function() {
+            alert("Can start playing video");
+        }
+    );
+
     player.onclick = playCtrl;
     playBtn.onclick = playCtrl;
 
