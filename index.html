@@ -172,7 +172,7 @@ window.onload = function(){
 
     // 视频播放控制
     function playCtrl(){
-        total.innerHTML = formatSeconds(this.duration);
+        total.innerHTML = formatSeconds(player.duration);
         if (player.paused){
             player.play();
             playBtn.classList.remove("icon-play3");
