@@ -114,8 +114,7 @@ window.onload = function(){
     player.ontimeupdate = function(){
         var currentTime = this.currentTime;
         var duration = this.duration;
-        var scale = currentTime / duration * 100 + "%";
-        loaded.style.width = scale;
+        loaded.style.width = currentTime / duration * 100 + "%";
         current.innerHTML = formatSeconds(currentTime);
     };
 
