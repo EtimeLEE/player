@@ -8,3 +8,5 @@
 - enter键进入/退出全屏
 - 左右方向键快进/快退（5秒）
 - 上下方向键调节音量大小
+
+[预览地址](https://etimelee.github.io/player/index.html)
